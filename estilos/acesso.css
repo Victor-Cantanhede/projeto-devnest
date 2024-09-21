@@ -87,8 +87,23 @@ html, body {
         width: 100%;
         height: 40px;
         padding: 10px;
+        outline: none;
         border: none;
         border-radius: 10px;
         font-size: 1em;
+        box-shadow: var(--box-shado001);
+    }
+
+    #btnEntrar {
+        width: 100%;
+        height: 56px;
+        padding: 10px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        box-shadow: var(--box-shado001);
+        font-size: 1em;    
+        background-color: var(--corpadrao001);
+        color: white;
     }
 }
