@@ -104,6 +104,41 @@ html, body {
         transition: 0.4s;
     }
 
+    #iou {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    div#containerAnonimo {
+        height: 0px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #acessAnonimo {
+        width: 50%;
+        color: var(--corpadrao005);
+        text-align: center;
+        text-decoration: none;
+        border: 1px solid var(--corpadrao001);
+        border-radius: 10px;
+        box-shadow: var(--box-shado001);
+    }
+
+    #acessAnonimo:hover {
+        background-color: var(--corpadrao001);
+        color: white;
+        transition: 0.4s;
+    }
+
+    #acessAnonimo:active {
+        background-color: var(--corpadrao006);
+        color: white;
+        transition: 0.1s;
+    }
+
     #btnEntrar {
         width: 100%;
         height: 56px;
@@ -129,6 +164,7 @@ html, body {
         transition: 0.1s;
     }
 
+    /*
     div#containerAnonimo {
         height: 0px;
         display: flex;
@@ -157,4 +193,5 @@ html, body {
         color: white;
         transition: 0.1s;
     }
+    */
 }
