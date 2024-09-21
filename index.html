@@ -28,7 +28,7 @@
         <!--DADOS DO USUÁRIO-->
         <form action="" method="post" name="acesso" id="iacesso" autocomplete="on">
 
-            <input type="text" name="nome" id="inome" placeholder="Digite seu nome" pattern="[A-Za-z]+" oninput="this.value = this.value.replace(/[^A-Za-z]/g, '');" required>
+            <input type="text" name="nome" id="inome" placeholder="Digite seu nome" pattern="[A-Za-z\s]+" oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, '');" required>
 
             <!--Aqui haverá um input para validar login-->
 
@@ -36,6 +36,10 @@
 
         <!--BOTÃO ENTRAR-->
         <button id="btnEntrar" onclick="verificarAcesso()">ENTRAR</button>
+
+        <div id="containerAnonimo">
+            <a id="acessAnonimo" href="home.html">Acessar como anônimo</a>
+        </div>
 
     </div>
 

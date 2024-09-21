@@ -65,12 +65,14 @@ html, body {
     #titulo01 {
         padding-right: 57px;
         font-size: 2em;
+        text-shadow: var(--box-shado001);
     }
 
     #titulo02 {
         text-align: center;
         font-size: 3em;
         color: var(--corpadrao002);
+        text-shadow: var(--box-shado001);
     }
 
     div.saudacao {
@@ -92,6 +94,14 @@ html, body {
         border-radius: 10px;
         font-size: 1em;
         box-shadow: var(--box-shado001);
+        background-color: var(--corpadrao006);
+        color: white;
+    }
+
+    input#inome:focus {
+        background-color: white;
+        color: black;
+        transition: 0.4s;
     }
 
     #btnEntrar {
@@ -102,8 +112,49 @@ html, body {
         border: none;
         border-radius: 10px;
         box-shadow: var(--box-shado001);
-        font-size: 1em;    
+        font-size: 1.1em;    
         background-color: var(--corpadrao001);
         color: white;
+        cursor: pointer;
+    }
+
+    #btnEntrar:hover {
+        background-color: var(--corpadrao002);
+        transition: 0.4s;
+    }
+
+    #btnEntrar:active {
+        background-color: var(--corpadrao006);
+        color: white;
+        transition: 0.1s;
+    }
+
+    div#containerAnonimo {
+        height: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #acessAnonimo {
+        width: 50%;
+        color: var(--corpadrao005);
+        text-align: center;
+        text-decoration: none;
+        border: 1px solid var(--corpadrao001);
+        border-radius: 10px;
+        box-shadow: var(--box-shado001);
+    }
+
+    #acessAnonimo:hover {
+        background-color: var(--corpadrao001);
+        color: white;
+        transition: 0.4s;
+    }
+
+    #acessAnonimo:active {
+        background-color: var(--corpadrao006);
+        color: white;
+        transition: 0.1s;
     }
 }
