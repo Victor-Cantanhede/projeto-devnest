@@ -6,6 +6,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
 
+
+/*VARIÁVEIS PADRÕES*/
+
 :root {
     --fontepadrao: "Varela", sans-serif;
     --corpadrao001: #1B2CC1;
@@ -35,11 +38,12 @@ html, body {
 
 /*CONFIGURAÇÃO ESPECÍFICA MOBILE*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 640px) {
 
 /*CONTAINER PRINCIPAL*/
     div.container {
         width: 90vw;
+        max-width: 300px;
         height: 70vh;
         padding: 15px;
         display: flex;
@@ -56,6 +60,14 @@ html, body {
         backdrop-filter: blur(10px);
         border-radius: 10px;
         box-shadow: var(--box-shado001)
+    }
+
+    div.container002 {
+        height: 500px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        align-items: stretch;
     }
 
 /*LOGO DEVNEST*/
