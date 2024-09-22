@@ -119,7 +119,7 @@ html, body {
     }
 
     #acessAnonimo {
-        width: 80%;
+        width: 200px;
         color: var(--corpadrao005);
         text-align: center;
         text-decoration: none;
