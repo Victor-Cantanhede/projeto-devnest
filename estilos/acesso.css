@@ -37,6 +37,7 @@ html, body {
 
 @media screen and (max-width: 768px) {
 
+/*CONTAINER PRINCIPAL*/
     div.container {
         width: 90vw;
         height: 70vh;
@@ -57,6 +58,7 @@ html, body {
         box-shadow: var(--box-shado001)
     }
 
+/*LOGO DEVNEST*/
     div.titulos {
         text-align: center;
         font-weight: bolder;
@@ -75,11 +77,13 @@ html, body {
         text-shadow: var(--box-shado001);
     }
 
+/*SAUDAÇÃO*/
     div.saudacao {
         text-align: left;
         font-size: 1em;
     }
 
+/*INPUT DADOS*/
     form {
         display: flex;
         justify-content: center;
@@ -104,11 +108,39 @@ html, body {
         transition: 0.4s;
     }
 
+/*BOTÃO ENTRAR*/
+    #btnEntrar {
+        width: 100%;
+        height: 56px;
+        padding: 10px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        box-shadow: var(--box-shado001);
+        font-size: 1.1em;    
+        background-color: var(--corpadrao001);
+        color: white;
+        cursor: pointer;
+    }
+
+    #btnEntrar:hover {
+        background-color: var(--corpadrao002);
+        transition: 0.4s;
+    }
+
+    #btnEntrar:active {
+        background-color: var(--corpadrao006);
+        color: white;
+        transition: 0.1s;
+    }
+
+/*OU*/
     #iou {
         font-size: 1em;
         text-align: center;
     }
 
+/*ACESSO ANÔNIMO*/
     div#containerAnonimo {
         height: 0px;
         margin-top: 10px;
@@ -140,59 +172,4 @@ html, body {
         transition: 0.1s;
     }
 
-    #btnEntrar {
-        width: 100%;
-        height: 56px;
-        padding: 10px;
-        outline: none;
-        border: none;
-        border-radius: 10px;
-        box-shadow: var(--box-shado001);
-        font-size: 1.1em;    
-        background-color: var(--corpadrao001);
-        color: white;
-        cursor: pointer;
-    }
-
-    #btnEntrar:hover {
-        background-color: var(--corpadrao002);
-        transition: 0.4s;
-    }
-
-    #btnEntrar:active {
-        background-color: var(--corpadrao006);
-        color: white;
-        transition: 0.1s;
-    }
-
-    /*
-    div#containerAnonimo {
-        height: 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #acessAnonimo {
-        width: 50%;
-        color: var(--corpadrao005);
-        text-align: center;
-        text-decoration: none;
-        border: 1px solid var(--corpadrao001);
-        border-radius: 10px;
-        box-shadow: var(--box-shado001);
-    }
-
-    #acessAnonimo:hover {
-        background-color: var(--corpadrao001);
-        color: white;
-        transition: 0.4s;
-    }
-
-    #acessAnonimo:active {
-        background-color: var(--corpadrao006);
-        color: white;
-        transition: 0.1s;
-    }
-    */
 }
