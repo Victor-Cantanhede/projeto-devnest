@@ -111,6 +111,7 @@ html, body {
 
     div#containerAnonimo {
         height: 0px;
+        margin-top: 10px;
         margin-bottom: 10px;
         display: flex;
         justify-content: center;
@@ -118,7 +119,7 @@ html, body {
     }
 
     #acessAnonimo {
-        width: 50%;
+        width: 80%;
         color: var(--corpadrao005);
         text-align: center;
         text-decoration: none;
