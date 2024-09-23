@@ -18,6 +18,7 @@
     --corpadrao005: #FFFFFF;
     --corpadrao006: #222222;
     --corpadrao007: #0a0a0a;
+    --fundo-cards: linear-gradient(to bottom, #000f911f, #000e9162, #000f911f); /*background-image*/
     --fundo-blur: rgba(0, 0, 0, 0.5);
     --box-shado001: 0px 0px 20px rgba(0, 0, 0, 0.60);
 }

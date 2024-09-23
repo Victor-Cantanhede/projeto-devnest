@@ -20,6 +20,7 @@
     --corpadrao005: #FFFFFF;
     --corpadrao006: #222222;
     --corpadrao007: #0a0a0a;
+    --fundo-cards: linear-gradient(to bottom, #000f911f, #000e9162, #000f911f); /*background-image*/
     --fundo-blur: rgba(0, 0, 0, 0.5);
     --box-shado001: 0px 0px 20px rgba(0, 0, 0, 0.60);
 }
@@ -44,7 +45,7 @@ html, body {
 
     /*BACKGROUND*/
     html, body {
-        background-image: url(../imagens/wallpaper-fundo001.png);
+        background-image: url(../imagens/fundo002.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -128,7 +129,22 @@ html, body {
         transition: 0.4s;
     }
 
-    /*TESTANDO POSIÇÃO SLOGAN*/
+    /*CONTEÚDO PRINCIPAL*/
+    main {
+        max-width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    main section.slogan {
+        min-height: 80vh;
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.719);
+    }
+
     div.slogan {
         height: 300px;
         max-width: 500px;
@@ -138,22 +154,6 @@ html, body {
     section.slogan p {
         font-size: 3em;
         text-align: center;
-    }
-
-    /*CONTEÚDO PRINCIPAL*/
-    main {
-        max-width: 100%;
-        display: flex;
-        flex-flow: column nowrap;
-    }
-
-    main section.slogan {
-        min-height: 300px;
-        min-width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(0, 0, 0, 0.719);
     }
 
     main article.sobreslogan {
@@ -182,7 +182,7 @@ html, body {
     }
 
     main section.sobreservicos {
-        min-height: 400px;
+        min-height: 600px;
         max-width: 100%;
         padding: 40px;
         background-color: black;
@@ -194,15 +194,16 @@ html, body {
     main article.infoservicos {
         width: 500px;
         padding: 20px;
-        border: 1px solid var(--corpadrao001);
         border-radius: 10px;
         background-color: black;
-        box-shadow: -3px -3px 10px var(--corpadrao001);
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
     }
 
     main article.infoservicos h1 {
         font-size: 2em;
-        color: var(--corpadrao002);
+        color: var(--corpadrao001);
         text-align: center;
     }
 
@@ -210,18 +211,74 @@ html, body {
         color: white;
         font-size: 1.3em;
         text-align: justify;
+        text-indent: 1em;
     }
 
-    main section.sobreservicos span {
+    main section.cards {
         height: 400px;
         width: 500px;
         padding: 20px;
-        background-image: url(../imagens/img001.png);
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-color: black;
         border-radius: 10px;
-        overflow: hidden;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
     }
+
+    /*MODELO DE CARDS*/
+    .containercard {
+        height: 254px;
+        width: 200px;
+        margin-bottom: 40px;
+        background-image: var(--fundo-cards);
+        border-radius: 10px;
+        transition: 0.4s;
+    }
+
+    .containercard:hover {
+        box-shadow: 0px 0px 10px var(--corpadrao001);
+        transition: 0.4s;
+    }
+    
+    .containericoncard {
+        height: 150px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #iconcard-html {
+        font-size: 6em;
+        color: var(--corpadrao001);
+        text-align: center;
+    }
+
+    #css {
+        font-size: 6em;
+        color: var(--corpadrao001);
+        text-align: center;
+    }
+
+    #js {
+        font-size: 6em;
+        color: var(--corpadrao001);
+        text-align: center;
+    }
+
+    #py {
+        font-size: 6em;
+        color: var(--corpadrao001);
+        text-align: center;
+    }
+
+    .containercard p {
+        padding: 10px;
+        color: white;
+        text-align: center;
+    }
+
+    /*..................*/
 
     main section.sobretreinamento {
         height: 300px;
