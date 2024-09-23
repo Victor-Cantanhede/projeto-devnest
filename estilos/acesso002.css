@@ -17,6 +17,7 @@
     --corpadrao004: #34E5FF;
     --corpadrao005: #FFFFFF;
     --corpadrao006: #222222;
+    --fundo-blur: rgba(0, 0, 0, 0.5);
     --box-shado001: 0px 0px 20px rgba(0, 0, 0, 0.60);
 }
 
@@ -137,6 +138,7 @@ html, body {
         background-color: var(--corpadrao001);
         color: white;
         cursor: pointer;
+        transition: 0.4s;
     }
 
     #btnEntrar:hover {
@@ -174,6 +176,7 @@ html, body {
         border: 1px solid var(--corpadrao001);
         border-radius: 10px;
         box-shadow: var(--box-shado001);
+        transition: 0.4s;
     }
 
     #acessAnonimo:hover {
