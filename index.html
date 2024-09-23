@@ -20,22 +20,28 @@
                 <h1 id="titulo01">&lt;DEV&gt;</h1>
                 <h1 id="titulo02">&lt;/NEST&gt;</h1>
             </div>
+
             <!--SAUDAÇÃO-->
             <div class="saudacao">
                 <p>Olá, seja bem vindo&#40;a&#41; ao DevNest!</p>
                 <p>Digite seu nome abaixo e clique em entrar.</p>
             </div>
+
             <!--DADOS DO USUÁRIO-->
             <form action="" method="post" name="acesso" id="iacesso" autocomplete="on">
+
                 <!--INPUT NOME-->
                 <input type="text" name="nome" id="inome" placeholder="Digite seu nome" pattern="[A-Za-z\s]+" oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, '');" required>
+
                 <!--Futuramente haverá um input para validar login-->
             </form>
+
             <!--BOTÃO ENTRAR-->
             <button id="btnEntrar" onclick="verificarAcesso()">ENTRAR</button>
             <div id="iou">
                 <p>----------------Ou----------------</p>
             </div>
+            
             <!--ACESSO ANÔNIMO-->
             <div id="containerAnonimo">
                 <a id="acessAnonimo" href="home.html">Acessar como anônimo</a>
