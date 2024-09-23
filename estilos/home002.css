@@ -19,6 +19,7 @@
     --corpadrao004: #34E5FF;
     --corpadrao005: #FFFFFF;
     --corpadrao006: #222222;
+    --corpadrao007: #0a0a0a;
     --fundo-blur: rgba(0, 0, 0, 0.5);
     --box-shado001: 0px 0px 20px rgba(0, 0, 0, 0.60);
 }
@@ -52,14 +53,13 @@ html, body {
     }
 
     header {
-        min-height: 100vh;
+        min-height: 90px;
     }
 
     header div.cabecalho {
-        padding: 20px;
-        position: fixed;
         height: 50px;
         width: 97%;
+        padding: 20px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -67,6 +67,7 @@ html, body {
         background-color: var(--fundo-blur);
         backdrop-filter: blur(10px);
         box-shadow: var(--box-shado001);
+        position: fixed;
     }
 
     header div.cabecalho a {
@@ -96,6 +97,7 @@ html, body {
 
     nav.menus a {
         padding: 10px;
+        outline: none;
         color: white;
         border-radius: 10px;
         text-align: center;
@@ -126,8 +128,104 @@ html, body {
         transition: 0.4s;
     }
 
+    /*TESTANDO POSIÇÃO SLOGAN*/
+    div.slogan {
+        height: 300px;
+        max-width: 500px;
+        background-color: white;
+    }
+
+    section.slogan p {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    /*CONTEÚDO PRINCIPAL*/
     main {
-        background-color: var(--corpadrao006);
+        max-width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    main section.slogan {
+        min-height: 300px;
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.719);
+    }
+
+    main article.sobreslogan {
+        width: 800px;
+        padding: 50px;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    main article.sobreslogan > #logo01 {
+        margin-right: 70px;
+        font-size: 3em;
+    }
+
+    main article.sobreslogan > #logo02 {
+        font-size: 4em;
+    }
+
+    main section.slogan p {
+        font-size: 3em;
+        text-align: center;
+        text-shadow: var(--box-shado001);
+        font-weight: bolder;
+        color: white;
+    }
+
+    main section.sobreservicos {
+        min-height: 400px;
+        max-width: 100%;
+        padding: 40px;
+        background-color: black;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    main article.infoservicos {
+        width: 500px;
+        padding: 20px;
+        border: 1px solid var(--corpadrao001);
+        border-radius: 10px;
+        background-color: black;
+        box-shadow: -3px -3px 10px var(--corpadrao001);
+    }
+
+    main article.infoservicos h1 {
+        font-size: 2em;
+        color: var(--corpadrao002);
+        text-align: center;
+    }
+
+    main article.infoservicos p {
+        color: white;
+        font-size: 1.3em;
+        text-align: justify;
+    }
+
+    main section.sobreservicos span {
+        height: 400px;
+        width: 500px;
+        padding: 20px;
+        background-image: url(../imagens/img001.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    main section.sobretreinamento {
+        height: 300px;
+        background-color: red;
     }
 
     footer {
