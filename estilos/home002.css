@@ -155,7 +155,7 @@ html, body {
 
     /*CONTEÚDO SLOGAN*/
     main section.slogan {
-        min-height: 80vh;
+        min-height: 95vh;
         min-width: 100%;
         display: flex;
         justify-content: center;
