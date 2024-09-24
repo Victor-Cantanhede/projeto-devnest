@@ -26,11 +26,54 @@
 
             <!--MENUS DE NAVEGAÇÃO-->
             <nav class="menus">
-                <a href="home.html"><p>Home</p></a>
-                <a href="#"><p>Serviços</p></a>
-                <a href="#"><p>Treinamento</p></a>
-                <a href="#isobre"><p>Sobre</p></a>
-                <a href="#" id="btnAcessarConta"><p>Acessar minha conta</p></a>
+                <!---->
+                <!---->
+                <!---->
+                <a href="home.html" class="btnNav">
+                    <span class="material-symbols-outlined">
+                        home
+                    </span>
+                    <p>Home</p>
+                </a>
+                <!---->
+                <!---->
+                <!---->
+                <a href="#" class="btnNav" onclick="servicoIndisp()">
+                    <span class="material-symbols-outlined">
+                        payments
+                    </span>
+                    <p>Serviços</p>
+                </a>
+                <!---->
+                <!---->
+                <!---->
+                <a href="#" class="btnNav" onclick="servicoIndisp()">
+                    <span class="material-symbols-outlined">
+                        school
+                    </span>
+                    <p>Treinamento</p>
+                </a>
+                <!---->
+                <!---->
+                <!---->
+                <a href="#isobre" class="btnNav">
+                    <span class="material-symbols-outlined">
+                        help
+                    </span>
+                    <p>Sobre</p>
+                </a>
+                <!---->
+                <!---->
+                <!---->
+                <a href="#" id="btnAcessarConta" class="btnNav" onclick="servicoIndisp()">
+                    <span class="material-symbols-outlined">
+                        login
+                    </span>
+                    <p>Acessar minha conta</p>
+                </a>
+                <!---->
+                <!---->
+                <!---->
             </nav>
         </div>
     </header>
@@ -183,9 +226,10 @@
     <footer>
         <aside>
             <p>
-                Site criado e desenvolvido por <u>Victor Cantanhede</u> para o projeto <u>DevNest</u>.
+                Site criado e desenvolvido por <a href="https://github.com/Victor-Cantanhede" target="_blank" style="color: white;";><u>Victor Cantanhede</u></a> para o projeto <u>DevNest</u>.
             </p>
         </aside>
     </footer>
+    <script src="interactions.js"></script>
 </body>
 </html>
