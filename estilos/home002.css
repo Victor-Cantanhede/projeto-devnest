@@ -55,27 +55,31 @@ html, body {
 
     /*CABEÇALHO*/
     header {
+        width: 100%;
         min-height: 90px;
+        position: fixed;
     }
 
     header div.cabecalho {
         height: 50px;
-        width: 97%;
         padding: 20px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        background-color: rgba(0, 0, 0, 0.815);
+        background-color: rgba(0, 0, 0, 0.507);
         backdrop-filter: blur(10px);
         box-shadow: var(--box-shado001);
-        position: fixed;
     }
 
     header div.cabecalho a {
         height: 20px;
         text-decoration: none;
         cursor: pointer;
+    }
+
+    header div.logo {
+        /*xxxxxxx*/
     }
 
     #logo01 {
