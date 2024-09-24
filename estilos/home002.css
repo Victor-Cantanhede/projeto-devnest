@@ -215,7 +215,7 @@ html, body {
     main article.infoservicos p {
         color: white;
         font-size: 1.3em;
-        text-align: justify;
+        text-align: left;
         text-indent: 1em;
     }
 
@@ -231,7 +231,6 @@ html, body {
         align-items: center;
     }
 
-    /*MODELO DE CARDS*/
     .containercard {
         height: 254px;
         width: 200px;
@@ -283,8 +282,6 @@ html, body {
         text-align: center;
     }
 
-    /*..................*/
-
     /*CONTEÚDO TREINAMENTO*/
     main section.sobretreinamento {
         height: 600px;
@@ -314,10 +311,11 @@ html, body {
     section.sobretreinamento article.infotreinamento p {
         color: white;
         font-size: 1.3em;
-        text-align: justify;
+        text-align: left;
         text-indent: 1em;
     }
 
+    /*CARDS TREINAMENTO*/
     main section.cards002 {
         width: 500px;
         padding: 20px;
@@ -327,6 +325,36 @@ html, body {
         flex-flow: row wrap;
         justify-content: space-around;
         align-items: center;
+    }
+
+    /*CONTEÚDO FINAL*/
+
+    section.final {
+        height: max-content;
+        padding: 20px;
+        color: white;
+        background-image: linear-gradient(to bottom, #080d38, black);
+    }
+
+    section.final p {
+        width: 500px;
+        padding: 20px;
+        margin: auto;
+        font-size: 1em;
+        background-image: var(--fundo-cards);
+        border-radius: 10px;
+    }
+
+    section.final p a {
+        color: var(--corpadrao002);
+        text-decoration: none;
+        transition: 0.4s;
+    }
+
+    section.final p a:hover {
+        color: white;
+        text-decoration: underline;
+        transition: 0.4s;
     }
 
     /*RODAPÉ*/
