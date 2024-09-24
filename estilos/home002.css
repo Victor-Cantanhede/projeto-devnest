@@ -41,7 +41,7 @@ html, body {
     flex-flow: column nowrap;
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 1183px) {
 
     /*BACKGROUND*/
     html, body {
@@ -53,6 +53,7 @@ html, body {
         flex-flow: column nowrap;
     }
 
+    /*CABEÇALHO*/
     header {
         min-height: 90px;
     }
@@ -90,6 +91,7 @@ html, body {
         text-shadow: var(--box-shado001);
     }
 
+    /*CABEÇALHO > MENUS*/
     nav.menus {
         width: 600px;
         display: flex;
@@ -136,6 +138,7 @@ html, body {
         flex-flow: column nowrap;
     }
 
+    /*CONTEÚDO SLOGAN*/
     main section.slogan {
         min-height: 80vh;
         min-width: 100%;
@@ -181,8 +184,9 @@ html, body {
         color: white;
     }
 
+    /*CONTEÚDO SERVIÇOS*/
     main section.sobreservicos {
-        min-height: 600px;
+        min-height: 580px;
         max-width: 100%;
         padding: 40px;
         background-color: black;
@@ -192,6 +196,7 @@ html, body {
     }
 
     main article.infoservicos {
+        height: 100%;
         width: 500px;
         padding: 20px;
         border-radius: 10px;
@@ -214,8 +219,8 @@ html, body {
         text-indent: 1em;
     }
 
+    /*CONTEÚDO SERVIÇOS > CARDS*/
     main section.cards {
-        height: 400px;
         width: 500px;
         padding: 20px;
         background-color: black;
@@ -223,13 +228,13 @@ html, body {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
+        align-items: center;
     }
 
     /*MODELO DE CARDS*/
     .containercard {
         height: 254px;
         width: 200px;
-        margin-bottom: 40px;
         background-image: var(--fundo-cards);
         border-radius: 10px;
         transition: 0.4s;
@@ -280,12 +285,56 @@ html, body {
 
     /*..................*/
 
+    /*CONTEÚDO TREINAMENTO*/
     main section.sobretreinamento {
-        height: 300px;
-        background-color: red;
+        height: 600px;
+        background-image: linear-gradient(to bottom, black, #080d38);
+        color: white;
+        display: flex;
+        flex-flow: row-reverse wrap;
+        justify-content: space-evenly;
     }
 
-    footer {
-        background-color: var(--corpadrao001);
+    section.sobretreinamento article.infotreinamento {
+        width: 500px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: transparent;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+
+    section.sobretreinamento article.infotreinamento h1 {
+        font-size: 2em;
+        color: var(--corpadrao001);
+        text-align: center;
+    }
+
+    section.sobretreinamento article.infotreinamento p {
+        color: white;
+        font-size: 1.3em;
+        text-align: justify;
+        text-indent: 1em;
+    }
+
+    main section.cards002 {
+        width: 500px;
+        padding: 20px;
+        background-color: transparent;
+        border-radius: 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /*RODAPÉ*/
+    footer aside {
+        height: 15px;
+        padding: 20px;
+        background-color: black;
+        color: white;
+        text-align: center;
     }
 }
