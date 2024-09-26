@@ -45,8 +45,9 @@ html, body {
 
     /*BACKGROUND*/
     html, body {
-        background-image: url(../imagens/wallpaper-fundo001.png);
+        background-image: url(../imagens/fundo002.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center bottom;
     }
 }

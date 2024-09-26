@@ -45,10 +45,11 @@ html, body {
 
     /*BACKGROUND*/
     html, body {
-        background-image: url(../imagens/wallpaper-fundo002.png);
+        background-image: url(../imagens/fundo003.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
+        background-position: center bottom;
         display: flex;
         flex-flow: column nowrap;
     }
@@ -160,7 +161,7 @@ html, body {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba(0, 0, 0, 0.719);
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
     div.slogan {
@@ -219,12 +220,18 @@ html, body {
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
+        align-items: center;
     }
 
     main article.infoservicos h1 {
         font-size: 2em;
         color: var(--corpadrao001);
         text-align: center;
+        border: 1px solid var(--corpadrao001);
+        border-radius: 20px;
+        padding: 5px;
+        width: 300px;
+        box-shadow: 0px 5px 20px var(--corpadrao001);
     }
 
     main article.infoservicos p {
@@ -315,12 +322,18 @@ html, body {
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
+        align-items: center;
     }
 
     section.sobretreinamento article.infotreinamento h1 {
         font-size: 2em;
         color: var(--corpadrao001);
         text-align: center;
+        border: 1px solid var(--corpadrao001);
+        border-radius: 20px;
+        padding: 5px;
+        width: 300px;
+        box-shadow: 0px 5px 20px var(--corpadrao001);
     }
 
     section.sobretreinamento article.infotreinamento p {
